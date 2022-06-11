@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 430px 25%;
+
+    font-size: 1vw;
+}
+header {
+    grid-column: 1/2;
+    grid-row: 1/2; 
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+    text-align: center;
+    background-color: blueviolet;
+}
+
+footer, header {
+    padding: 0 50px;
+
+    align-items: center;
+}
+
+main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+section, aside {
+    padding: 50px 50px;
+} 
+
+aside {
+    grid-column: 2/3;
+
+    text-align: center;
+    background-color: aqua;
+}
+
+section{
+    grid-column: 1/2;
+
+    display: grid;
+
+    background-color: violet;
+}
+.section_main {
+    height: 100px;
+    
+    text-align: center;
+}
+.section_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+.section_box {
+    height: 75%;
+    display: grid;
+    align-content: center;
+
+    background-color: darkmagenta;
+}
+.section_box:last-child {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: 2fr;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: darkcyan;
+}
+footer div {
+    height: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+
+    background-color: bisque;
+}
+footer h2 {
+    text-align: center;
+}
